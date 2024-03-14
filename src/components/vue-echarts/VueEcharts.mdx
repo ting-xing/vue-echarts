@@ -1,0 +1,40 @@
+import {Canvas, Meta} from '@storybook/blocks';
+
+import * as EchartsComponentStories from "./VueEcharts.stories.ts";
+
+<Meta of={EchartsComponentStories}></Meta>
+# VueEcharts
+
+### 基本示例 [官方示例](https://echarts.apache.org/examples/zh/editor.html?c=line-simple)
+
+**组件默认高度是 `height:100%;`,需保证父元素有足够的高度或者通过样式覆盖自己的高度**
+
+对于简单的的配置，只要将配置传给 `option` 属性即可
+
+<Canvas of={EchartsComponentStories.baseLineChart}/>
+
+在 option 改动的时候，自动调用 echartsInstance.setOption 方法
+
+<Canvas of={EchartsComponentStories.baseBarChart}/>
+
+### 内置官方默认主题
+
+```ts
+// 使用主题之前，先注册
+import {EchartsThemeRegister} from "vue-echarts";
+new EchartsThemeRegister().register();
+```
+
+```vue
+  <VueEcharts :theme="EchartsTheme.PurplePassion"/>
+```
+
+<Canvas of={EchartsComponentStories.useTheme}/>
+
+
+
+
+
+
+
+

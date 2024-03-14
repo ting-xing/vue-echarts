@@ -1,0 +1,44 @@
+{
+  "name": "vue-echarts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/vue-echarts.umd.cjs",
+  "module": "./dist/vue-echarts.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-echarts.js",
+      "require": "./dist/vue-echarts.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "peerDependencies": {
+    "echarts": "^5.5.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.2.19",
+    "@storybook/addon-essentials": "^8.0.0",
+    "@storybook/addon-interactions": "^8.0.0",
+    "@storybook/addon-links": "^8.0.0",
+    "@storybook/blocks": "^8.0.0",
+    "@storybook/test": "^8.0.0",
+    "@storybook/vue3": "^8.0.0",
+    "@storybook/vue3-vite": "^8.0.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "storybook": "^8.0.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.7.3",
+    "vue-tsc": "^1.8.5"
+  }
+}

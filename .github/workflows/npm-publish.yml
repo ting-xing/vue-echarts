@@ -6,6 +6,9 @@ name: publish npm
 on:
   release:
     types: [created]
+  push:
+    tags:
+      - v**
 
 jobs:
   publish-npm:

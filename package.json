@@ -12,8 +12,14 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/vue-echarts.js",
-      "require": "./dist/vue-echarts.umd.cjs"
+      "import": {
+        "default": "./dist/vue-echarts.js",
+        "types": "./dist/index.d.ts"
+      },
+      "require": {
+        "default": "./dist/vue-echarts.umd.cjs",
+        "types": "./dist/index.d.ts"
+      }
     }
   },
   "scripts": {

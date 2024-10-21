@@ -75,12 +75,13 @@ export const baseBarChart: Story = {
 }
 
 
-new EchartsThemeRegister().register();
+
 export const useTheme: Story = {
     name: "使用 echartsOption",
     render: (args) => ({
         components: {VueEcharts},
         setup() {
+            new EchartsThemeRegister().register();
             const currentTheme = ref(EchartsTheme.Vintage)
             const show = ref(true);
 

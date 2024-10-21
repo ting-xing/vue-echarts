@@ -18,6 +18,8 @@ npm i @ting-xing/vue-echarts -S
 ```vue
 
 <script setup>
+  import VueEcharts from '@ting-xing/vue-echarts'
+  
   const option = {
     xAxis: {
       type: 'category',
